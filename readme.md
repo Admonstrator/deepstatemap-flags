@@ -2,7 +2,9 @@
 
 # DeepStateMap - Neutral Flags
 
-Version: 1.0
+Version: 1.1
+
+Deutsche Version der readme siehe weiter unten.
 
 ## Purpose
 
@@ -21,6 +23,11 @@ Glory to Ukraine! Slava Ukraini!
 * Install [Greasemonkey for Firefox](https://addons.mozilla.org/de/firefox/addon/greasemonkey/) or [Tampermonkey for Chrome](https://www.tampermonkey.net/)
 
 * Install the userscript. You can do this by clicking [here](https://github.com/Admonstrator/deepstatemap-flags/raw/main/deepstatemap-flags.user.js) or by copying the content of the file [deepstatemap-flags.user.js](https://github.com/Admonstrator/deepstatemap-flags/raw/main/deepstatemap-flags.user.js) into a new script in your userscript manager.
+
+## Changelog
+
+* v1.1
+  * Improved performance like @rainbow365#6624 on Discord suggested
 
 ---
 

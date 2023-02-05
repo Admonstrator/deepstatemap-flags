@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DeepStateMap - Neutral Flags
 // @namespace    https://github.com/Admonstrator/deepstatemap-flags
-// @version      1.0
+// @version      1.1
 // @description  Replaces the pigs on DeepStateMap with neutral flags.
 // @author       Admonstrator
 // @homepage    https://github.com/Admonstrator/deepstatemap-flags
@@ -18,6 +18,9 @@
 // I support Ukraine by my heart but Militär & Geschichte mit Torsten Heinrich is a more neutral channel and needs flags instead of pigs or potatoes for a better overview.
 // I can highly recommend his channel: https://www.youtube.com/@MilitarGeschichte
 // Slava Ukraini!
+//
+// Changelog
+// v1.1: Improved performance like @rainbow365#6624 suggested
 
 window.addEventListener('load', function () {
     let lookup_table = {
@@ -27,10 +30,9 @@ window.addEventListener('load', function () {
     };
 
     for (let image of document.getElementsByTagName('img')) {
-        for (let query in lookup_table) {
-            if (image.src == query) {
-                image.src = lookup_table[query];
-            }
+        let img_url = image.src;
+        if (img_url in lookup_table) {
+            image.src = lookup_table[img_url];
         }
     }
 }, false);
